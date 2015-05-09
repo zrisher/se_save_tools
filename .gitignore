@@ -1,0 +1,10 @@
+__pycache__
+
+/examples
+
+/logs
+!/logs/.gitkeep
+
+/test/data
+!/test/data/.gitkeep
+/test/tmp

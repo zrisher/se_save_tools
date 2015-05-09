@@ -1,0 +1,7 @@
+name: zrisher-se-save-tools
+channels:
+  - https://conda.binstar.org/omnia
+  - defaults
+dependencies:
+  - pip
+  - python>=2.7
