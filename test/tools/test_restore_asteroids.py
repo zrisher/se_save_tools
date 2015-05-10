@@ -37,8 +37,8 @@ def test_restore_asteroids():
     # init logger
     log_file_name = "SEWT_test_{0}.txt".format(RUN_TIMESTAMP)
     log_path = os.path.join(LOG_DIR, log_file_name)
-    logger = simple_logger('run', log_path)
-    logger.info('initialized logger')
+    logger = simple_logger('run', log_path, level_str='debug')
+    logger.debug('initialized logger')
 
     # create copy of test world to work with
     delete_dir(TMP_DIR)

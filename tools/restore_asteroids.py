@@ -8,20 +8,16 @@ This tool
 
 
 def run(world, backup_world, logger):
-    logger.info('running restore_asteroids {0}'.format(True))
+    logger.info('running restore_asteroids')
 
-    sector = world.tree('sector').getroot()
-
-    asteroids = sector.findall("SectorObjects/MyObjectBuilder_EntityBase")
-
-    logger.info('---asteroids----')
-
-    logger.info('asteroids {0}'.format(asteroids))
-    for child in asteroids:
-        logger.info('child {0}'.format(child))
-
-    logger.info('-----------------\n')
-
+    asteroids = world.asteroids()
+    logger.debug('asteroids {0}'.format(asteroids))
+    for asteroid_id, asteroid in asteroids.items():
+        logger.debug('looping asteroid {0}'.format(asteroid))
+        logger.debug('grids within 2km {0}'.format(world.grids_within(2000, asteroid)))
+        if not world.grids_within(2000, asteroid):
+            logger.debug('removing asteroid')
+            asteroid.delete()
 
 
 

@@ -1,0 +1,38 @@
+"MyObjectBuilder_CubeBlock;"
+"MyObjectBuilder_InteriorLight;"
+
+"MyObjectBuilder_ConveyorConnector",
+"MyObjectBuilder_Reactor",
+"MyObjectBuilder_BatteryBlock",
+"MyObjectBuilder_SolarPanel",
+"MyObjectBuilder_CargoContainer",
+
+"""
+type_custom_names = MyObjectBuilder_RadioAntenna;MyObjectBuilder_LaserAntenna;MyObjectBuilder_Beacon
+cubegrid_backup_folder = Cubegrid Backups
+
+type_timer_block = MyObjectBuilder_TimerBlock
+
+type_reactor = MyObjectBuilder_Reactor
+type_player_item_names = AngleGrinderItem;HandDrillItem;WelderItem
+block_names_to_ignore = Antenna;Laser Antenna;Beacon
+type_assembler = MyObjectBuilder_Assembler
+blocks_not_worth_saving = MyObjectBuilder_CubeBlock;MyObjectBuilder_InteriorLight;MyObjectBuilder_ConveyorConnector
+type_solar = MyObjectBuilder_SolarPanel
+
+type_cargo = MyObjectBuilder_CargoContainer
+type_refinery = MyObjectBuilder_Refinery
+type_colorhsvmask = MyObjectBuilder_Cockpit;MyObjectBuilder_TimerBlock;MyObjectBuilder_SensorBlock;MyObjectBuilder_ButtonPanel
+
+type_battery = MyObjectBuilder_BatteryBlock
+
+type_light_interior = MyObjectBuilder_InteriorLight
+type_factories = MyObjectBuilder_Refinery;MyObjectBuilder_Assembler
+type_light_spot = MyObjectBuilder_ReflectorLight
+npc_names = Private Sail;Business Shipment;Commercial Freighter;Mining Carriage;Mining Transport;Mining Hauler;Military Escort;Military Minelayer;Military Transporter
+
+type_player_item = MyObjectBuilder_PhysicalGunObject
+type_programmable_block = MyObjectBuilder_MyProgrammableBlock
+small_save_filename = Sandbox.sbc
+type_cleanup_blocks = MyObjectBuilder_RadioAntenna;MyObjectBuilder_Beacon;MyObjectBuilder_Reactor
+"""

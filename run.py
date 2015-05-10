@@ -32,12 +32,14 @@ def parse_cl_args():
     """
     parser = argparse.ArgumentParser()
     parser.add_argument("tool", help="which tool to run")
-    parser.add_argument("-l", "--log_dir",
-                        help="the directory path for logs")
     parser.add_argument('-w', '--world_dir', required=True,
                         help="the directory path for world files")
     parser.add_argument('-b', '--backup_dir',
-                        help="the directory path to store and load backups")
+                        help="the directory path to store and load backups, " +
+                             "default world_dir/backup")
+    parser.add_argument("-l", "--log_dir",
+                        help="the directory path for logs, " +
+                             "default se_save_tools/logs")
     return parser.parse_args()
 
 
